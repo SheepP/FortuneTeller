@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FortuneTeller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OldMan" translatesAutoresizingMaskIntoConstraints="NO" id="t2R-f6-4IB">
+                                <rect key="frame" x="38" y="0.0" width="692" height="1024"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="t2R-f6-4IB" secondAttribute="height" multiplier="173:256" id="EpO-w0-Pnb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="90R-yb-tYu" userLabel="1">
+                                <rect key="frame" x="183" y="618" width="402" height="227"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="90R-yb-tYu" secondAttribute="height" multiplier="402:227" id="uKh-cg-kWt"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ffz-bT-v6T" userLabel="Help VIew">
+                                <rect key="frame" x="0.0" y="845" width="340" height="179"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="zoI-CB-J1E"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="19o-Qi-vEc" userLabel="Help ImageView 2">
+                                <rect key="frame" x="463" y="944" width="305" height="80"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zzt-OW-Gon">
+                                <rect key="frame" x="197" y="851" width="374" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zzt-OW-Gon" secondAttribute="height" multiplier="70:17" id="JWh-KS-t8h"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Button"/>
+                                <state key="highlighted" image="ButtonPressed"/>
+                                <connections>
+                                    <action selector="answerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="raJ-HB-owz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99803675520000001" green="0.91454892967056134" blue="0.054172037507671265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="19o-Qi-vEc" firstAttribute="height" secondItem="t2R-f6-4IB" secondAttribute="height" multiplier="80:1024" id="0B4-jk-ObK"/>
+                            <constraint firstItem="Ffz-bT-v6T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AFB-t0-ggx"/>
+                            <constraint firstItem="Ffz-bT-v6T" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="FVR-Qx-QSL"/>
+                            <constraint firstItem="t2R-f6-4IB" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="I7O-WO-qWm"/>
+                            <constraint firstItem="t2R-f6-4IB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KwV-fL-Svr"/>
+                            <constraint firstItem="Ffz-bT-v6T" firstAttribute="top" secondItem="90R-yb-tYu" secondAttribute="bottom" id="OT8-Ua-MtC"/>
+                            <constraint firstItem="t2R-f6-4IB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TI0-Nh-V8G"/>
+                            <constraint firstItem="t2R-f6-4IB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YVy-sz-36F"/>
+                            <constraint firstItem="Zzt-OW-Gon" firstAttribute="height" secondItem="t2R-f6-4IB" secondAttribute="height" multiplier="85:1024" id="ZwH-Ds-H5W"/>
+                            <constraint firstItem="t2R-f6-4IB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="aJb-BT-hWN"/>
+                            <constraint firstItem="19o-Qi-vEc" firstAttribute="top" secondItem="Zzt-OW-Gon" secondAttribute="bottom" id="b1n-z5-pXL"/>
+                            <constraint firstItem="Zzt-OW-Gon" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="diz-Fm-zqG"/>
+                            <constraint firstItem="90R-yb-tYu" firstAttribute="height" secondItem="t2R-f6-4IB" secondAttribute="height" multiplier="227:1024" id="eRD-uh-PHv"/>
+                            <constraint firstItem="Ffz-bT-v6T" firstAttribute="height" secondItem="t2R-f6-4IB" secondAttribute="height" multiplier="179:1024" id="fkv-sR-ep3"/>
+                            <constraint firstItem="19o-Qi-vEc" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="n8w-YM-55L"/>
+                            <constraint firstItem="90R-yb-tYu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t26-b9-5Q3"/>
+                            <constraint firstItem="19o-Qi-vEc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="zWR-2A-Edy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="yourfortune" destination="90R-yb-tYu" id="RBN-dv-6d5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.1875" y="117.18749999999999"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="402" height="227"/>
+        <image name="Button" width="380" height="85"/>
+        <image name="ButtonPressed" width="380" height="85"/>
+        <image name="OldMan" width="692" height="1024"/>
+    </resources>
+</document>
